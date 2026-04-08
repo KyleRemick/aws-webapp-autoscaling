@@ -9,6 +9,17 @@ Simple Python scripts that deploy a basic web page on EC2 instances behind an Ap
 - Launch template and Auto Scaling group
 - EC2 user data installs Apache and serves a small HTML page
 
+Architecture flow: User -> Application Load Balancer -> Auto Scaling Group -> EC2 instances
+
+### Concepts Used/Learned
+- Deploying EC2 instances using Launch Templates
+- Configuring an Application Load Balancer with target groups
+- Creating Auto Scaling Groups across multiple Availability Zones
+- Automating infrastructure lifecycle using boto3 deployment scripts
+
+### Portfolio Blurb
+This project demonstrates practical AWS automation by provisioning EC2 capacity behind an Application Load Balancer and Auto Scaling Group with Python and boto3. It covers launch templates, target groups, multi-AZ scaling, and repeatable deployment and cleanup workflows.
+
 ### Deployment
 1. Make sure your AWS credentials are configured (e.g. `aws configure`).
 2. Create a Python venv and install dependencies:
