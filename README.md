@@ -1,6 +1,7 @@
 ## aws-webapp-autoscaling
 
-Simple Python scripts that deploy a basic web page on EC2 instances behind an Application Load Balancer with Auto Scaling.
+### Summary
+This project demonstrates practical AWS automation by provisioning EC2 capacity behind an Application Load Balancer and Auto Scaling Group with Python and boto3. It covers launch templates, target groups, multi-AZ scaling, and repeatable deployment and cleanup workflows.
 
 ### Architecture
 - Default VPC and two subnets
@@ -16,9 +17,6 @@ Architecture flow: User -> Application Load Balancer -> Auto Scaling Group -> EC
 - Configuring an Application Load Balancer with target groups
 - Creating Auto Scaling Groups across multiple Availability Zones
 - Automating infrastructure lifecycle using boto3 deployment scripts
-
-### Portfolio Blurb
-This project demonstrates practical AWS automation by provisioning EC2 capacity behind an Application Load Balancer and Auto Scaling Group with Python and boto3. It covers launch templates, target groups, multi-AZ scaling, and repeatable deployment and cleanup workflows.
 
 ### Deployment
 1. Make sure your AWS credentials are configured (e.g. `aws configure`).
